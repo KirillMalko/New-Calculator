@@ -1,0 +1,65 @@
+body {
+    background: #9bba1f;
+    user-select: none;
+}
+
+.display {
+    display: grid;
+    background: darkred;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 4px;
+    padding: 4px;
+    border-radius: 5px;
+    max-width: 360px;
+    margin: auto;
+}
+
+form {
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    height: 60px;
+    font-size: 30px;
+    outline: none;
+    text-align: right;
+}
+
+.item {
+    background: sandybrown;
+    display: flex;
+    color: black;
+    padding: 20px;
+    justify-content: center;
+    align-content: center;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.input {
+    grid-column: 1/-1;
+    background: cadetblue;
+    /*padding: 20px;*/
+}
+
+.clean {
+    grid-column: 1/3;
+    background: gold;
+}
+
+.delete {
+    grid-column: 3/-1;
+    background: maroon;
+}
+
+.equal {
+    grid-column: 4;
+    grid-row: 6/8;
+}
+
+.zero {
+    grid-column: 1/3;
+
+}
